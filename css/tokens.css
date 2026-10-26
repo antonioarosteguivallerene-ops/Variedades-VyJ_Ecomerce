@@ -1,0 +1,99 @@
+/* ==========================================================
+   TOKENS DE DISEÑO — Variedades Jesly
+   Aquí viven los colores y tipografías del prototipo.
+   Cambia un valor y toda la interfaz se actualiza.
+   Modo oscuro: se activa con el sistema o con el botón de la barra superior.
+   ========================================================== */
+:root {
+  /* Superficies */
+  --bg: #F4ECE7;
+  --bg-side: #F8F2EE;
+  --surface: #FCF9F7;
+  --surface-2: #F7F0EC;
+  --surface-3: #F0E6E1;
+  --line: #EADDD8;
+  --line-soft: #F1E7E3;
+
+  /* Texto */
+  --ink: #38282D;
+  --ink-2: #6B5A5F;
+  --muted: #85777B;
+
+  /* Rosa de marca (del prototipo) */
+  --rose-50: #FCF1F0;
+  --rose-100: #F7E0DF;
+  --rose-200: #EDC8C8;
+  --rose-300: #E0AEB0;
+  --rose-400: #D09599;
+  --rose-500: #C07B82;
+  --rose-600: #A8646C;
+  --rose-700: #874C54;
+  --grad: linear-gradient(135deg, #D9A9AA 0%, #BC7F85 55%, #A8666E 100%);
+
+  /* Estados */
+  --ok: #2F8A5E;      --ok-bg: #E1F2E8;
+  --warn: #B87A12;    --warn-bg: #FBEFD3;   --warn-line: #EBC878;
+  --bad: #B23549;     --bad-bg: #FADFE2;
+  --info: #5F5FCB;    --info-bg: #EAE9FA;
+
+  /* Categorías en la dona de reportes */
+  --cat-1: #C27F85; --cat-2: #D4979B; --cat-3: #EFD3CF;
+  --cat-4: #8E7E80; --cat-5: #E6BDBD; --cat-6: #D3C8C6;
+
+  /* Sombras y capas */
+  --shadow-sm: 0 1px 2px rgba(110, 70, 78, .05), 0 6px 18px rgba(110, 70, 78, .05);
+  --shadow-md: 0 2px 4px rgba(110, 70, 78, .06), 0 16px 38px rgba(110, 70, 78, .12);
+  --shadow-btn: 0 6px 14px rgba(176, 108, 116, .28);
+  --overlay: rgba(56, 40, 45, .38);
+
+  /* Tipografía */
+  --f-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --f-sans: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-mono: 'DM Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* Forma */
+  --r-lg: 16px;
+  --r-md: 12px;
+  --r-sm: 9px;
+  --sidebar-w: 236px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1C1517; --bg-side: #211A1C; --surface: #271E21; --surface-2: #2E2427; --surface-3: #382C30;
+    --line: #3E3135; --line-soft: #33282B;
+    --ink: #F3E8E6; --ink-2: #CDBDBF; --muted: #A08F93;
+    --rose-50: #34252A; --rose-100: #432E34; --rose-200: #5A3B43; --rose-300: #9A5F68;
+    --rose-400: #C0838A; --rose-500: #D79AA0; --rose-600: #E3AEB3; --rose-700: #EEC5C8;
+    --grad: linear-gradient(135deg, #C98B90 0%, #B27279 55%, #9C5D65 100%);
+    --ok: #6FCB9B; --ok-bg: #1F3329;
+    --warn: #E2B04F; --warn-bg: #392E18; --warn-line: #6B5421;
+    --bad: #F08A9B; --bad-bg: #40222A;
+    --info: #A9A8F2; --info-bg: #2B2A4A;
+    --cat-1: #D28A91; --cat-2: #B9777D; --cat-3: #7D5A5F; --cat-4: #A89597; --cat-5: #8F6469; --cat-6: #5E4F52;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .22);
+    --shadow-md: 0 2px 4px rgba(0, 0, 0, .35), 0 16px 38px rgba(0, 0, 0, .4);
+    --shadow-btn: 0 6px 14px rgba(0, 0, 0, .35);
+    --overlay: rgba(0, 0, 0, .58);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #1C1517; --bg-side: #211A1C; --surface: #271E21; --surface-2: #2E2427; --surface-3: #382C30;
+  --line: #3E3135; --line-soft: #33282B;
+  --ink: #F3E8E6; --ink-2: #CDBDBF; --muted: #A08F93;
+  --rose-50: #34252A; --rose-100: #432E34; --rose-200: #5A3B43; --rose-300: #9A5F68;
+  --rose-400: #C0838A; --rose-500: #D79AA0; --rose-600: #E3AEB3; --rose-700: #EEC5C8;
+  --grad: linear-gradient(135deg, #C98B90 0%, #B27279 55%, #9C5D65 100%);
+  --ok: #6FCB9B; --ok-bg: #1F3329;
+  --warn: #E2B04F; --warn-bg: #392E18; --warn-line: #6B5421;
+  --bad: #F08A9B; --bad-bg: #40222A;
+  --info: #A9A8F2; --info-bg: #2B2A4A;
+  --cat-1: #D28A91; --cat-2: #B9777D; --cat-3: #7D5A5F; --cat-4: #A89597; --cat-5: #8F6469; --cat-6: #5E4F52;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 18px rgba(0, 0, 0, .22);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, .35), 0 16px 38px rgba(0, 0, 0, .4);
+  --shadow-btn: 0 6px 14px rgba(0, 0, 0, .35);
+  --overlay: rgba(0, 0, 0, .58);
+  color-scheme: dark;
+}
